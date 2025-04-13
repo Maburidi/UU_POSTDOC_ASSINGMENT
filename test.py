@@ -6,6 +6,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt    
 from torch.utils.data import DataLoader, Subset
 from torchvision import transforms
+from DataLoader0 import ImageDataset              
+from simpleCNNmodel import SimpleCNN            
 
                     
 model = SimpleCNN()  
