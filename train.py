@@ -2,9 +2,9 @@ from sklearn.model_selection import KFold
 from torch.utils.data import DataLoader, Subset
 import torch
 import torch.nn as nn
-import torch.optim as optim
-from torchvision import transforms
-from DataLoader import ImageDataset              
+import torch.optim as optim                         
+from torchvision import transforms             
+from DataLoader0 import ImageDataset              
 from simpleCNNmodel import SimpleCNN            
 
 
@@ -18,10 +18,8 @@ transform = transforms.Compose([
 ])
 
 train_dataset = ImageDataset('/content/data0/training', transform=transform)    
-test_dataset = ImageDataset('/content/data0/testing',   transform=transform)    
                                                                                 
 train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)           
-test_loader = DataLoader(test_dataset, batch_size=32, shuffle=True)            
 
 
 
