@@ -3,7 +3,9 @@ from torch.utils.data import DataLoader, Subset
 import torch
 import torch.nn as nn
 import torch.optim as optim
-
+from torchvision import transforms
+from DataLoader import ImageDataset              
+from simpleCNNmodel import SimpleCNN            
 
 
 #------------------- Transforms: Define augmentation chain ----------------------
