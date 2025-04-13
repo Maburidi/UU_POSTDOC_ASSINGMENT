@@ -23,8 +23,8 @@ train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
 
 
 
-k_folds = 4
-num_epochs = 80
+k_folds = 5
+num_epochs = 100
 
 
 def main():
